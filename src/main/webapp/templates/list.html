@@ -1,0 +1,19 @@
+<div>List</div>
+
+<div class="container">
+    <table class="table table-hover"><thead>
+            <tr>
+                <th>pic</th>
+                <th>Name</th>
+                <th>details</th>
+            </tr>
+        </thead>
+        
+        <tr ng-repeat="user in users">
+            <td><img src="{{user.picture.thumbnail}}" alt="Nothing"></td>
+            <td>{{user.first}} {{user.last}}</td>
+            <td><a href="#/details/{{user.id}}">Details</a></td>
+        </tr>
+        
+    </table>
+</div>
